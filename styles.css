@@ -1,0 +1,289 @@
+body {
+    font-family: 'Gotham SSm', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Light background color */
+    color: #fffefe; /* Default text color */
+}
+
+nav {
+    background: linear-gradient(135deg, #4b89ff, #8f4aff); /* Gradient background for the navigation bar */
+    color: #fff; /* Text color in the navigation bar */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff; /* White background color */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+#home {
+    background: url('your-background-image.jpg') center/cover; /* Add your background image */
+}
+
+h1 {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Additional styling for a more modern look */
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change to your preferred hover color */
+}
+
+/* Add a subtle pattern to the sections */
+section::after {
+    content: '';
+    background-image: url('your-pattern-image.png'); /* Add your pattern image */
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Additional styling for a more modern look */
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change to your preferred hover color */
+}
+
+#games {
+    padding: 40px;
+    text-align: center;
+    background-color: #929292; /* White background color */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.game {
+    margin-bottom: 30px;
+}
+
+.game img {
+    max-width: 30%; /* Make images responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game h2 {
+    font-size: 24px;
+    color: #f7f6f6;
+}
+
+.game p {
+    font-size: 18px;
+    color: #faf8f8;
+}
+
+.game a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b89ff; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.game a:hover {
+    background-color: #8f4aff; /* Darker blue on hover */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    max-width: 65px; /* Adjust the size of the logo as needed */
+}
+
+.copyright {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials img {
+    width: 30px; /* Adjust the size of social media icons as needed */
+    margin-right: 10px;
+}
+
+#blog {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff; /* White background color */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.blog-post p {
+    font-size: 18px;
+    color: #555;
+}
+
+.blog-post a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b89ff; /* Blue background color */
+    color: #000000; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.blog-post a:hover {
+    background-color: #8f4aff; /* Darker blue on hover */
+}
+
+.blog-post iframe {
+    width: 20%; /* Make the embedded videos responsive */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    height: 315px; /* Set a fixed height for embedded videos */
+    margin-bottom: 15px; /* Add some space below the video */
+}
+
+.blog-post img {
+    max-width: 20%; /* Make images responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #292828; /* White background color */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#blog-post h1 {
+    font-size: 32px;
+    color: #d6d4d4; /* Header text color (adjust as needed) */
+}
+
+.meta-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #131111;
+}
+
+.content {
+    font-size: 18px;
+    color: #000000; /* Text color set to black */
+}
+
+.content img {
+    max-width: 40%; /* Make images responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content iframe {
+    width: 40%; /* Make embedded videos responsive */
+    max-width: 40%;
+    height: 315px; /* Set a fixed height for embedded videos */
+    margin-bottom: 20px; /* Add some space below the video */
+}
+
+#about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #353333; /* White background color */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#about h1 {
+    font-size: 32px;
+    color: #e0d9d9; /* Header text color (adjust as needed) */
+}
+
+.about-content {
+    font-size: 18px;
+    color: #f3f1f1;
+    line-height: 1.6; /* Adjust line height for better readability */
+}
