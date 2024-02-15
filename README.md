@@ -1,2 +1,7 @@
 # ng-site
-Website for my Roblox development studio.
+
+Welcome to NG site's code!
+
+```lua
+print("More coming soon!")
+```
