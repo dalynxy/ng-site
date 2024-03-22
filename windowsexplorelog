@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelogs</title>
+  <link rel="icon" href="favicons/upd_favico.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #000000, #6b1cff, #000000);
+      color: #c0c0c0;
+      opacity: 0; /* Initially set opacity to 0 */
+      animation: fadeIn 1s ease forwards; /* Animation to fade in */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      animation: fadeInContent 1s ease forwards; /* Animation to fade in content */
+    }
+
+    @keyframes fadeInContent {
+      from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide up effect */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .logo img {
+      max-width: 350px;
+      height: auto;
+    }
+
+    .navigation-bar {
+    background-color: transparent;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center the navigation buttons horizontally */
+    align-items: center;
+    }
+
+    .navigation-button {
+      margin: 0 10px;
+      color: #e2e2e2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .navigation-button:hover {
+      color: #007bff;
+    }
+
+    .changelog {
+      flex: 1;
+      display: flex;
+      background: #313131;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      overflow: hidden; /* Hide overflowing content */
+    }
+
+    .sidebar {
+      flex: 0 0 25%;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #d3d3d3;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+    }
+
+    li:hover {
+      background-color: #f0f0f0;
+      color: #000; /* Added this line */
+    }
+
+    .update {
+      display: none;
+      animation: fadeIn 0.5s ease-in-out; /* Added animation */
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .social-bar {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+    }
+
+    .social-bar a {
+      margin: 0 10px;
+      color: #e2e2e2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-bar a:hover {
+      color: #007bff;
+    }
+
+    .tag {
+      padding: 5px 10px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .tag-release {
+      background-color: #ff0000; /* Release tag color */
+      color: white;
+    }
+
+    .tag-patch {
+      background-color: #3d4bd1; /* Patch tag color */
+      color: white;
+    }
+
+    .tag-comingsoon {
+      background-color: #47975f; /* Patch tag color */
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="logo">
+    <img src="explore_logo.png" alt="Logo">
+  </div>
+  <div class="navigation-bar">
+    <a href="index.html" class="navigation-button">Go back</a>
+  </div>
+  <div class="changelog">
+    <div class="sidebar">
+      <h1>Updates</h1>
+      <ul>
+        <li onclick="showUpdate('update1')" class="tag tag-release">Version A5 Patch 1</li>
+        <li onclick="showUpdate('update2')" class="tag tag-patch">Version A6</li>
+        <li onclick="showUpdate('update3')" class="tag tag-comingsoon">Version A7</li>
+        <!-- Add more updates as needed -->
+      </ul>
+    </div>
+    <div class="content">
+      <div class="update" id="update1" style="display: block;">
+        <h2>Version A5 Patch 1</h2>
+        <p>This is the main release, having Windows 95 and Windows XP with it.</p>
+        <img src="w95_release.png" alt="Update 1 Image" style="max-width: 520px;">
+        <img src="xp_release.png" alt="Update 1 Image" style="max-width: 520px;">
+      </div>
+      <div class="update" id="update2">
+        <h2>Version A6</h2>
+        <p>Vista is now here!</p>
+        <img src="vista_upd1.png" alt="Update 2 Image" style="max-width: 520px;">
+      </div>
+      <div class="update" id="update3">
+        <h2>Version A7 [COMING SOON]</h2>
+        <p>NOTE: This update is coming soon, but I decided to tell you what will be in this update.</p>
+        <p>Upcoming content:<br>• Windows 7 is here!<br>• Bug fixes</p>
+        <p>Sneak Peak:</p>
+        <video src="win7sneakpeak.mp4" controls style="max-width: 520px; border-radius: 5px;"></video>
+      </div>
+    </div>
+  </div>
+  <hr style="margin: 20px; border-top: 1px solid rgba(0, 0, 0, 0.1);">
+  <div class="social-bar">
+    <a href="https://www.roblox.com/groups/13340939/Normally-Games#!/about">Roblox Group</a>
+    <a href="https://youtube.com/@YTMichael_">Founder's Channel</a>
+  </div>
+</div>
+
+<script>
+  function showUpdate(id) {
+    var updates = document.getElementsByClassName('update');
+    for (var i = 0; i < updates.length; i++) {
+      updates[i].style.display = 'none';
+    }
+    var update = document.getElementById(id);
+    update.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
